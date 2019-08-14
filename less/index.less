@@ -61,14 +61,33 @@ html, body {
 /* Colors */
 
 @introBackgroundColor: #eee;
-@btnBackgroundColor: #444;
+@introBtnBackgroundColor: #444;
 @footerBackgroundColor: #444;
+@containerMaxWidth: 75%;
+
+/* Buttons */
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-image: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-size: 1.313em;
+  font-weight: bold;
+  border-radius: 4px
+}
 
 .container {
-    max-width: 80%;
+    max-width: @containerMaxWidth;
     margin: 0 auto;
     padding: 2em;
 
+    /* Header */
     header {
         height: 10vh;
         padding: 1em 2em;
@@ -91,6 +110,36 @@ html, body {
                 padding-left: 2em;
             }
 
+        }
+    }
+    /* Intro */
+    .intro {
+        background: @introBackgroundColor;
+        padding: 3em 4em;
+        border-radius: 5px;
+
+        .short-intro {
+            h2 {
+                font-size: 3.5em;
+                font-weight: bold;
+            }
+
+            .tag-line {
+                padding-top: 1.7em;
+                padding-bottom: 1.5em;
+                font-size: 1.3em;
+            }
+
+            p {
+                padding-top: 1em;
+                padding-bottom: 1em;
+                font-size: 1.3em;
+            }
+
+            .intro-btn{
+                background: @introBtnBackgroundColor;
+                color: #fff;
+            }
         }
     }
 }
