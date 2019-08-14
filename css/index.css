@@ -134,3 +134,156 @@ html,
 body {
   height: 100%;
 }
+/* Colors */
+/* Buttons */
+.btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-image: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-size: 1.313em;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 2em;
+  /* Header */
+  /* Intro */
+  /* Skills */
+  /* Work section */
+  /* footer */
+}
+.container header {
+  height: 10vh;
+  padding: 1em 2em;
+}
+.container header nav {
+  text-align: right;
+}
+.container header nav .menu li {
+  display: inline-block;
+}
+.container header nav .menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-weight: 1.2em;
+}
+.container header nav .menu li ~ li {
+  padding-left: 2em;
+}
+.container .intro {
+  background: #eee;
+  padding: 3em 4em;
+  border-radius: 5px;
+}
+.container .intro .profile-img {
+  width: 60%;
+}
+.container .intro .profile-img img {
+  width: 100%;
+}
+.container .intro .short-intro h2 {
+  font-size: 3.5em;
+  font-weight: bold;
+}
+.container .intro .short-intro .tag-line {
+  padding-top: 1.7em;
+  padding-bottom: 1.5em;
+  font-size: 1.3em;
+}
+.container .intro .short-intro p {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 1.3em;
+}
+.container .intro .short-intro .intro-btn {
+  background: #444;
+  color: #fff;
+}
+.container .skills {
+  padding-top: 2em;
+  padding-bottom: 1.5em;
+  display: flex;
+  justify-content: space-around;
+}
+.container .skills .skills-intro {
+  flex: 1;
+  padding-right: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.container .skills .skills-intro h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.container .skills .skills-intro p {
+  padding-top: 1em;
+  line-height: 1.9em;
+  flex-grow: 1;
+}
+.container .skills .skills-list {
+  flex: 1;
+}
+.container .skills .skills-list h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.container .skills .skills-list .skills-list-items {
+  padding-top: 1em;
+  text-align: center;
+}
+.container .skills .skills-list .skills-list-items li {
+  padding: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.container .skills .skills-list .skills-list-items li:first-child {
+  border-radius: 5px 5px 0 0;
+}
+.container .skills .skills-list .skills-list-items li:last-child {
+  border-radius: 0 0 5px 5px;
+}
+.container .work {
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+.container .work h2 {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-bottom: 1em;
+}
+.container .work table {
+  width: 100%;
+}
+.container .work table tr {
+  border-top: 1px solid #aaa;
+}
+.container .work table tr th {
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 1.5em;
+  text-align: center;
+}
+.container .work table tr td {
+  padding: 1.5em;
+  text-align: center;
+}
+.container .work table tr:nth-child(even) {
+  background: #eee;
+}
+.container footer {
+  background: #444;
+  color: #fff;
+  text-align: center;
+  padding: 2em 3em;
+}
+.container footer small {
+  font-weight: bold;
+}
