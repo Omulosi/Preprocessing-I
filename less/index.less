@@ -57,3 +57,41 @@ html, body {
     height: 100%;
 }
 
+
+/* Colors */
+
+@introBackgroundColor: #eee;
+@btnBackgroundColor: #444;
+@footerBackgroundColor: #444;
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2em;
+
+    header {
+        height: 10vh;
+        padding: 1em 2em;
+
+        nav {
+            text-align: right;
+
+            .menu li {
+                display: inline-block;
+            }
+
+            .menu a {
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+                font-weight: 1.2em;
+            }
+
+            .menu li ~ li {
+                padding-left: 2em;
+            }
+
+        }
+    }
+}
+
