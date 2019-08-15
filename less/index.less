@@ -64,6 +64,7 @@ html, body {
 @introBtnBackgroundColor: #444;
 @footerBackgroundColor: #444;
 @containerMaxWidth: 75%;
+@mobileWidth: 500px;
 
 /* Buttons */
 
@@ -97,6 +98,9 @@ html, body {
 
             .menu li {
                 display: inline-block;
+                &:hover {
+                    border-bottom: 1px solid #333;
+                }
             }
 
             .menu a {
@@ -104,6 +108,7 @@ html, body {
                 color: #333;
                 font-weight: bold;
                 font-weight: 1.2em;
+
             }
 
             .menu li ~ li {
@@ -156,6 +161,10 @@ html, body {
         padding-bottom: 1.5em;
         display: flex;
         justify-content: space-around;
+
+        @media (max-device-width: @mobileWidth) {
+            flex-direction: column;
+        }
 
         .skills-intro {
             flex: 1;

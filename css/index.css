@@ -170,6 +170,9 @@ body {
 .container header nav .menu li {
   display: inline-block;
 }
+.container header nav .menu li:hover {
+  border-bottom: 1px solid #333;
+}
 .container header nav .menu a {
   text-decoration: none;
   color: #333;
@@ -213,6 +216,11 @@ body {
   padding-bottom: 1.5em;
   display: flex;
   justify-content: space-around;
+}
+@media (max-device-width: 500px) {
+  .container .skills {
+    flex-direction: column;
+  }
 }
 .container .skills .skills-intro {
   flex: 1;
