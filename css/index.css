@@ -135,6 +135,15 @@ body {
   height: 100%;
 }
 /* Colors */
+/* Mixin */
+.mobileHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  text-align: none;
+  font-size: 2em;
+}
 /* Buttons */
 .btn {
   display: inline-block;
@@ -182,6 +191,23 @@ body {
 .container header nav .menu li ~ li {
   padding-left: 2em;
 }
+@media (max-device-width: 500px) {
+  .container header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    text-align: none;
+    font-size: 2em;
+  }
+  .container header nav .menu li {
+    flex: 1;
+    display: block;
+  }
+  .container header nav .menu li ~ li {
+    padding: 0;
+  }
+}
 .container .intro {
   background: #eee;
   padding: 3em 4em;
@@ -208,6 +234,18 @@ body {
   font-size: 1.3em;
 }
 .container .intro .short-intro .intro-btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-image: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-size: 1.313em;
+  font-weight: bold;
+  border-radius: 4px;
   background: #444;
   color: #fff;
 }
